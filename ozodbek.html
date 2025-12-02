@@ -22,7 +22,7 @@
 		/* NAVBAR */
 		nav {
 			width: 100%;
-			padding: 20px 8%;
+			padding: 25px 8%;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -38,11 +38,12 @@
 			font-size: 28px;
 			font-weight: 700;
 			color: #F4A261;
+			letter-spacing: 1px;
 		}
 
 		nav ul {
 			display: flex;
-			gap: 30px;
+			gap: 40px;
 		}
 
 		nav ul li {
@@ -62,21 +63,18 @@
 
 		/* HERO */
 		.hero {
-			min-height: 100vh;
+			height: 100vh;
 			display: flex;
 			align-items: center;
-			justify-content: space-between;
-			padding: 120px 8% 0;
-			flex-wrap: wrap;
-			gap: 40px;
+			padding: 0 8%;
 		}
 
 		.hero .text {
-			max-width: 550px;
+			max-width: 600px;
 		}
 
 		.hero h1 {
-			font-size: 55px;
+			font-size: 60px;
 			font-weight: 700;
 			line-height: 1.2;
 		}
@@ -91,13 +89,6 @@
 			font-size: 18px;
 		}
 
-		.hero img {
-			width: 350px;
-			border-radius: 20px;
-			object-fit: cover;
-			box-shadow: 0 0 20px rgba(244, 162, 97, 0.4);
-		}
-
 		.btn {
 			padding: 12px 28px;
 			background: #F4A261;
@@ -105,7 +96,6 @@
 			border-radius: 8px;
 			font-weight: 600;
 			text-decoration: none;
-			display: inline-block;
 			transition: .3s;
 		}
 
@@ -115,22 +105,21 @@
 
 		/* ABOUT */
 		.about {
-			padding: 100px 8%;
+			padding: 120px 8%;
 			display: flex;
 			align-items: center;
-			gap: 50px;
-			flex-wrap: wrap;
+			gap: 60px;
 		}
 
 		.about img {
-			width: 330px;
+			width: 350px;
 			border-radius: 20px;
 			box-shadow: 0 0 20px rgba(244, 162, 97, 0.4);
 		}
 
 		.about .info h2 {
-			font-size: 36px;
-			margin-bottom: 10px;
+			font-size: 38px;
+			margin-bottom: 15px;
 		}
 
 		.about .info p {
@@ -147,19 +136,19 @@
 		.services h2 {
 			text-align: center;
 			font-size: 38px;
-			margin-bottom: 40px;
+			margin-bottom: 50px;
 		}
 
 		.service-box {
 			display: grid;
 			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-			gap: 25px;
+			gap: 30px;
 		}
 
 		.card {
-			padding: 25px;
+			padding: 30px;
 			background: #11172b;
-			border-radius: 14px;
+			border-radius: 16px;
 			transition: .3s;
 			border: 1px solid transparent;
 		}
@@ -171,7 +160,7 @@
 
 		.card h3 {
 			margin-bottom: 10px;
-			font-size: 20px;
+			font-size: 22px;
 		}
 
 		.card p {
@@ -180,12 +169,12 @@
 
 		/* CONTACT */
 		.contact {
-			padding: 80px 8%;
+			padding: 100px 8%;
 			text-align: center;
 		}
 
 		.contact h2 {
-			font-size: 36px;
+			font-size: 38px;
 			margin-bottom: 20px;
 		}
 
@@ -201,26 +190,9 @@
 			color: #777;
 			background: #0a0f1f;
 		}
-
-		@media (max-width: 768px) {
-			.hero h1 {
-				font-size: 42px;
-			}
-
-			.hero img {
-				width: 280px;
-			}
-
-			.about {
-				text-align: center;
-			}
-
-			.about img {
-				margin: 0 auto;
-			}
-		}
 	</style>
 </head>
+<!-- 3D PARTICLES + NEON GRID + HACKER CODE EFFECT -->
 
 <body>
 
@@ -241,16 +213,13 @@
 				Scorpion uslubidagi kiber UI — hammasi men bilan!</p>
 			<a href="#contact" class="btn">Aloqa qilish</a>
 		</div>
-		<img src="Boosss.jpg" alt="profile-image" />
 	</section>
 
 	<section class="about" id="about">
-		<img
-			src="mn kompaniyada CIO man shunga mos menga shahsiy logo kerak Siddikov Ozodbek shundan foydalanib yaratib ber (2).jpg"
-			alt="about-image" />
+		<img src="Boosss.jpg" alt="about-image" />
 		<div class="info">
 			<h2>Men kimman?</h2>
-			<p>Men Ozodbek — 20 yosh, ambitsiyali va kuchli frontend/backend yo'nalishida rivojlanayotgan dasturchiman.
+			<p>Men Ozodbek — yosh, ambitsiyali va kuchli frontend/backend yo'nalishida rivojlanayotgan dasturchiman.
 				Kiberxavfsizlik, UI/UX dizayn va IT sohasida kuchli bo'lishni maqsad qilganman. Portfolio saytim orqali o'z
 				ko'nikmalarimni yig'ib boraman.</p>
 		</div>
@@ -263,14 +232,17 @@
 				<h3>Portfolio Website</h3>
 				<p>Professional, chiroyli va premium dizayn asosida shaxsiy sayt.</p>
 			</div>
+
 			<div class="card">
 				<h3>Cyber UI Design</h3>
 				<p>Scorpion, Matrix yoki hacking vibe bilan UI yaratish.</p>
 			</div>
+
 			<div class="card">
 				<h3>Frontend Development</h3>
 				<p>HTML, CSS, Tailwind, React orqali kuchli UI yaratish.</p>
 			</div>
+
 			<div class="card">
 				<h3>Backend Basics</h3>
 				<p>Node.js asosidagi oddiy backend, auth va API funksiyalar.</p>
@@ -289,5 +261,115 @@
 	</footer>
 
 </body>
+<script>
+	// Canvas yaratish
+	const canvas = document.createElement("canvas")
+	canvas.style.position = "fixed"
+	canvas.style.top = 0
+	canvas.style.left = 0
+	canvas.style.width = "100%"
+	canvas.style.height = "100%"
+	canvas.style.zIndex = "-1"
+	canvas.style.pointerEvents = "none"
+	document.body.appendChild(canvas)
+
+	const ctx = canvas.getContext("2d")
+
+	function resize() {
+		canvas.width = window.innerWidth
+		canvas.height = window.innerHeight
+	}
+	resize()
+	window.onresize = resize
+
+	// Particles
+	let particles = []
+	const COUNT = 80
+
+	for (let i = 0; i < COUNT; i++) {
+		particles.push({
+			x: Math.random() * canvas.width,
+			y: Math.random() * canvas.height,
+			size: Math.random() * 2 + 1,
+			speedX: Math.random() * 0.6 - 0.3,
+			speedY: Math.random() * 0.6 - 0.3
+		})
+	}
+
+	function drawParticles() {
+		ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+		particles.forEach((p) => {
+			ctx.beginPath()
+			ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2)
+			ctx.fillStyle = "rgba(0, 255, 200, 0.8)"
+			ctx.shadowColor = "cyan"
+			ctx.shadowBlur = 10
+			ctx.fill()
+
+			p.x += p.speedX
+			p.y += p.speedY
+
+			if (p.x < 0 || p.x > canvas.width) p.speedX *= -1
+			if (p.y < 0 || p.y > canvas.height) p.speedY *= -1
+		})
+	}
+
+	// Neon Grid
+	function drawGrid() {
+		ctx.strokeStyle = "rgba(0, 150, 255, 0.2)"
+		ctx.lineWidth = 1
+
+		const gridSize = 40
+
+		for (let x = 0; x < canvas.width; x += gridSize) {
+			ctx.beginPath()
+			ctx.moveTo(x, 0)
+			ctx.lineTo(x, canvas.height)
+			ctx.stroke()
+		}
+
+		for (let y = 0; y < canvas.height; y += gridSize) {
+			ctx.beginPath()
+			ctx.moveTo(0, y)
+			ctx.lineTo(canvas.width, y)
+			ctx.stroke()
+		}
+	}
+
+	// Hacker code lines
+	const codeLines = []
+	for (let i = 0; i < 20; i++) {
+		codeLines.push({
+			text: "01100101 10111001 11011011 10010111",
+			x: Math.random() * canvas.width,
+			y: Math.random() * canvas.height,
+			speed: 0.4 + Math.random() * 0.3
+		})
+	}
+
+	function drawCode() {
+		ctx.font = "14px monospace"
+		ctx.fillStyle = "rgba(0,255,0,0.6)"
+		codeLines.forEach((line) => {
+			ctx.fillText(line.text, line.x, line.y)
+			line.y += line.speed
+			if (line.y > canvas.height) {
+				line.y = -20
+				line.x = Math.random() * canvas.width
+			}
+		})
+	}
+
+	// Animation loop
+	function animate() {
+		drawGrid()
+		drawParticles()
+		drawCode()
+		requestAnimationFrame(animate)
+	}
+	animate();
+</script>
+
 
 </html>
