@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Ozodbek Portfolio</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		body {
+			background: #0a0f1f;
+			color: white;
+		}
+
+		/* NAVBAR */
+		nav {
+			width: 100%;
+			padding: 20px 8%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			position: fixed;
+			top: 0;
+			background: rgba(10, 15, 31, 0.6);
+			-webkit-backdrop-filter: blur(10px);
+			backdrop-filter: blur(10px);
+			z-index: 100;
+		}
+
+		nav .logo {
+			font-size: 28px;
+			font-weight: 700;
+			color: #F4A261;
+		}
+
+		nav ul {
+			display: flex;
+			gap: 30px;
+		}
+
+		nav ul li {
+			list-style: none;
+		}
+
+		nav ul li a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 16px;
+			transition: .3s;
+		}
+
+		nav ul li a:hover {
+			color: #F4A261;
+		}
+
+		/* HERO */
+		.hero {
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 120px 8% 0;
+			flex-wrap: wrap;
+			gap: 40px;
+		}
+
+		.hero .text {
+			max-width: 550px;
+		}
+
+		.hero h1 {
+			font-size: 55px;
+			font-weight: 700;
+			line-height: 1.2;
+		}
+
+		.hero h1 span {
+			color: #F4A261;
+		}
+
+		.hero p {
+			margin: 20px 0;
+			color: #ccc;
+			font-size: 18px;
+		}
+
+		.hero img {
+			width: 350px;
+			border-radius: 20px;
+			object-fit: cover;
+			box-shadow: 0 0 20px rgba(244, 162, 97, 0.4);
+		}
+
+		.btn {
+			padding: 12px 28px;
+			background: #F4A261;
+			color: black;
+			border-radius: 8px;
+			font-weight: 600;
+			text-decoration: none;
+			display: inline-block;
+			transition: .3s;
+		}
+
+		.btn:hover {
+			opacity: .8;
+		}
+
+		/* ABOUT */
+		.about {
+			padding: 100px 8%;
+			display: flex;
+			align-items: center;
+			gap: 50px;
+			flex-wrap: wrap;
+		}
+
+		.about img {
+			width: 330px;
+			border-radius: 20px;
+			box-shadow: 0 0 20px rgba(244, 162, 97, 0.4);
+		}
+
+		.about .info h2 {
+			font-size: 36px;
+			margin-bottom: 10px;
+		}
+
+		.about .info p {
+			font-size: 17px;
+			color: #bbb;
+			line-height: 1.6;
+		}
+
+		/* SERVICES */
+		.services {
+			padding: 100px 8%;
+		}
+
+		.services h2 {
+			text-align: center;
+			font-size: 38px;
+			margin-bottom: 40px;
+		}
+
+		.service-box {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 25px;
+		}
+
+		.card {
+			padding: 25px;
+			background: #11172b;
+			border-radius: 14px;
+			transition: .3s;
+			border: 1px solid transparent;
+		}
+
+		.card:hover {
+			transform: translateY(-6px);
+			border-color: #F4A261;
+		}
+
+		.card h3 {
+			margin-bottom: 10px;
+			font-size: 20px;
+		}
+
+		.card p {
+			color: #aaa;
+		}
+
+		/* CONTACT */
+		.contact {
+			padding: 80px 8%;
+			text-align: center;
+		}
+
+		.contact h2 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+
+		.contact a {
+			font-size: 20px;
+			color: #F4A261;
+			text-decoration: none;
+		}
+
+		footer {
+			text-align: center;
+			padding: 25px;
+			color: #777;
+			background: #0a0f1f;
+		}
+
+		@media (max-width: 768px) {
+			.hero h1 {
+				font-size: 42px;
+			}
+
+			.hero img {
+				width: 280px;
+			}
+
+			.about {
+				text-align: center;
+			}
+
+			.about img {
+				margin: 0 auto;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav>
+		<div class="logo">Ozodbek</div>
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+
+	<section class="hero" id="home">
+		<div class="text">
+			<h1>Salom, men <span>Ozodbek</span><br>IT Developer & Cyber Lover</h1>
+			<p>Men zamonaviy, estetik va mukammal ishlovchi web-saytlar yarataman. Portfolio, landing page, dashboard va hatto
+				Scorpion uslubidagi kiber UI — hammasi men bilan!</p>
+			<a href="#contact" class="btn">Aloqa qilish</a>
+		</div>
+		<img src="Boosss.jpg" alt="profile-image" />
+	</section>
+
+	<section class="about" id="about">
+		<img
+			src="mn kompaniyada CIO man shunga mos menga shahsiy logo kerak Siddikov Ozodbek shundan foydalanib yaratib ber (2).jpg"
+			alt="about-image" />
+		<div class="info">
+			<h2>Men kimman?</h2>
+			<p>Men Ozodbek — 20 yosh, ambitsiyali va kuchli frontend/backend yo'nalishida rivojlanayotgan dasturchiman.
+				Kiberxavfsizlik, UI/UX dizayn va IT sohasida kuchli bo'lishni maqsad qilganman. Portfolio saytim orqali o'z
+				ko'nikmalarimni yig'ib boraman.</p>
+		</div>
+	</section>
+
+	<section class="services" id="services">
+		<h2>Xizmatlarim</h2>
+		<div class="service-box">
+			<div class="card">
+				<h3>Portfolio Website</h3>
+				<p>Professional, chiroyli va premium dizayn asosida shaxsiy sayt.</p>
+			</div>
+			<div class="card">
+				<h3>Cyber UI Design</h3>
+				<p>Scorpion, Matrix yoki hacking vibe bilan UI yaratish.</p>
+			</div>
+			<div class="card">
+				<h3>Frontend Development</h3>
+				<p>HTML, CSS, Tailwind, React orqali kuchli UI yaratish.</p>
+			</div>
+			<div class="card">
+				<h3>Backend Basics</h3>
+				<p>Node.js asosidagi oddiy backend, auth va API funksiyalar.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<h2>Aloqa</h2>
+		<p>Menga email orqali murojaat qiling:</p>
+		<a href="mailto:ozodbeksiddiqov2006@gmail.com">ozodbeksiddiqov2006@gmail.com</a>
+	</section>
+
+	<footer>
+		© 2025 Ozodbek Portfolio — Barcha huquqlar himoyalangan
+	</footer>
+
+</body>
+
+</html>
