@@ -3,86 +3,146 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Azimjon – Shaxsiy Portfolio</title>
+    <title>Azimjon — Shaxsiy Portfolio</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-    <header>
-        <h1>Azimjon Abdumannonov</h1>
-        <p class="subtitle">Frontend Developer | IT Enthusiast</p>
-
-        <nav>
-            <a href="#about">Men haqimda</a>
-            <a href="#interests">Qiziqishlar</a>
-            <a href="#projects">Loyihalar</a>
-            <a href="#contact">Aloqa</a>
-        </nav>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-brand">
+                <h1 class="header-name">Azimjon</h1>
+                <p class="header-title">Frontend Developer</p>
+            </div>
+            <nav class="header-nav">
+                <a href="#about" class="nav-link">Men haqimda</a>
+                <a href="#interests" class="nav-link">Qiziqishlar</a>
+                <a href="#projects" class="nav-link">Loyihalar</a>
+                <a href="#contact" class="nav-link">Aloqa</a>
+            </nav>
+        </div>
     </header>
 
-    <section id="about" class="section">
-        <h2>Men haqimda</h2>
-        <p>
-            Salom! Men Azimjonman — ITga juda qiziqaman. Frontendni o‘rganayapman,
-            JavaScript, dizayn va real loyihalar yaratish bilan shug‘ullanaman.
-            Kelajakda professional full-stack dasturchi bo‘lishni maqsad qilganman.
-        </p>
-    </section>
-
-    <section id="interests" class="section">
-        <h2>Qiziqishlarim</h2>
-
-        <div class="cards">
-            <div class="card">
-                <h3>Frontend Development</h3>
-                <p>React, JavaScript, UI/UX dizayn.</p>
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Men haqimda</h2>
+                <div class="about-content">
+                    <p class="about-text">
+                        Salom! Men Azimjonman — ITga juda qiziqaman. Frontendni o'rganayapman,
+                        JavaScript, dizayn va real loyihalar yaratish bilan shug'ullanaman.
+                        Kelajakda professional full-stack dasturchi bo'lishni maqsad qilganman.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-value">5+</span>
+                            <span class="stat-label">Proyektlar</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">2+</span>
+                            <span class="stat-label">Yillar Tajribasi</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="card">
-                <h3>Trading</h3>
-                <p>Bozorlarni tahlil qilish va strategiyalar.</p>
+        <!-- Interests Section -->
+        <section id="interests" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Qiziqishlarim</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">💻</div>
+                        <h3 class="card-title">Frontend Development</h3>
+                        <p class="card-description">React, JavaScript, UI/UX dizayn.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📈</div>
+                        <h3 class="card-title">Trading</h3>
+                        <p class="card-description">Bozorlarni tahlil qilish va strategiyalar.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎨</div>
+                        <h3 class="card-title">Dizayn</h3>
+                        <p class="card-description">Figma, web dizayn konseptlari.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🤖</div>
+                        <h3 class="card-title">AI & Machine Learning</h3>
+                        <p class="card-description">Sun'iy intellekt g'oyalari va mini loyihalar.</p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="card">
-                <h3>Dizayn</h3>
-                <p>Figma, web dizayn konseptlari.</p>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Loyihalar</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Unicorn — Scholarship</h3>
+                        </div>
+                        <p class="project-description">
+                            Imkoniyati cheklangan yoshlarga o'qish kontraktini to'lab berish loyihasi.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Web</span>
+                            <span class="tag">Social Impact</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">IP Location Map</h3>
+                        </div>
+                        <p class="project-description">
+                            IP manzilni aniqlab, xaritada ko'rsatib beruvchi web loyiha.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="card">
-                <h3>AI & Machine Learning</h3>
-                <p>Sun’iy intellekt g‘oyalari va mini loyihalar.</p>
+        <!-- Contact Section -->
+        <section id="contact" class="section section-contact">
+            <div class="section-container">
+                <h2 class="section-title">Aloqa</h2>
+                <div class="contact-content">
+                    <p class="contact-text">Menga sms, email yoki Telegram orqali yozib qo'ying:</p>
+                    <div class="contact-links">
+                        <a href="mailto:azimjon@example.com" class="contact-link">
+                            <span class="contact-icon">📧</span>
+                            <span>azimjonabdumannonov777@gmail.com</span>
+                        </a>
+                        <a href="https://t.me/azimjon" class="contact-link">
+                            <span class="contact-icon">✈️</span>
+                            <span>@azimjon</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-text">© 2025 Azimjon — Barcha huquqlar himoyalangan.</p>
+            <div class="footer-socials">
+                <a href="#" class="social-link" title="GitHub">GitHub</a>
+                <a href="#" class="social-link" title="LinkedIn">LinkedIn</a>
+                <a href="#" class="social-link" title="Twitter">Twitter</a>
             </div>
         </div>
-    </section>
-
-    <section id="projects" class="section">
-        <h2>Loyihalar</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>Unicorn — Scholarship</h3>
-                <p>Imkoniyati cheklangan yoshlarga o‘qish kontraktini to‘lab berish loyihasi.</p>
-            </div>
-
-            <div class="card">
-                <h3>IP Location Map</h3>
-                <p>IP manzilni aniqlab, xaritada ko‘rsatib beruvchi web loyiha.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <h2>Aloqa</h2>
-        <p>Email: <strong>azimjon@example.com</strong></p>
-        <p>Telegram: <strong>@azimjon</strong></p>
-    </section>
-
-    <footer>
-        <p>© 2025 Azimjon — Barcha huquqlar himoyalangan.</p>
     </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
